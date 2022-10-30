@@ -1,0 +1,364 @@
+body {
+    font-family: sans-serif;
+    /*main backgroud color*/
+    background-color: rgba(247, 243, 247, 0.2);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/*--------------header-----------------*/
+.header {
+    background-color: var(--color-1);
+    padding: 12px 0;
+    line-height: 1.5;
+}
+
+.header .logo {
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.header .logo,
+.header .nav {
+    padding: 0 15px;
+}
+
+.header .nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.header .logo a {
+    font-size: 2rem;
+    color: #0e0a0a;
+    text-transform: capitalize;
+}
+
+.header .nav ul li a {
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #1a1313;
+
+    transition: all 0.5s ease;
+    margin-left: 40px;
+}
+
+.header .nav ul li a.active,
+.header .nav ul li a:hover {
+    color: #f3a93d;
+}
+
+/* ..project section.. */
+
+#project {
+    padding: 130px 163px;
+}
+
+#project .project-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 90px;
+}
+
+#project .project-img {
+    width: 50%;
+    margin-right: 40px;
+
+}
+
+#project img {
+    width: 500px;
+    height: 340px;
+    object-fit: cover;
+    border: 1px solid #606060;
+    border-radius: 4px;
+}
+
+#project .project-details {
+    width: 100%;
+    font-weight: 600;
+}
+
+#project .project-details a {
+    position: relative;
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    transition: 0.3s;
+    margin-top: 200px;
+}
+
+#project .project-details a:hover {
+    color: #088178;
+}
+
+#project .project-details a:hover::after {
+    background-color: #088178;
+}
+
+#project .project-box h2 {
+    position: absolute;
+    left: 0%;
+    right: 70.87%;
+    top: 0%;
+    bottom: 95.98%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 121.5%;
+    letter-spacing: -0.03em;
+    color: #181717;
+
+}
+
+#project .project-box h3 {
+    position: absolute;
+    left: 0%;
+    right: 68.21%;
+    top: 9.3%;
+    bottom: 54.97%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 121.5%;
+    letter-spacing: -0.03em;
+    color: #181717;
+}
+
+#project .project-box p {
+    position: absolute;
+    left: 0%;
+    right: 71.84%;
+    top: 30.66%;
+    bottom: 61.95%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 121.5%;
+    letter-spacing: -0.03em;
+    color: #606060;
+}
+
+#project .project-box a {
+    position: absolute;
+    left: 0%;
+    right: 70.87%;
+    top: 20.36%;
+    bottom: 22.41%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 121.5%;
+    letter-spacing: -0.03em;
+    text-decoration-line: underline;
+    color: #181717;
+}
+
+/* ...footer... */
+#footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 150px 30px;
+    top: 0;
+    left: 0;
+
+}
+
+#footer h1 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    letter-spacing: -0.03em;
+    color: #2429AF;
+}
+
+#footer a {
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-bar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nav-bar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+
+/* ...about me page...*/
+
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details h1 {
+    padding-left: 40px;
+    width: 400px;
+    height: 150px;
+    top: 30px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 97.2%;
+    letter-spacing: -0.03em;
+    color: #181717;
+}
+
+#contact-details .details h2 {
+    padding-left: 40px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #606060;
+}
+
+#contact-details .img {
+    display: block;
+    height: 30%;
+    margin-top: 70px;
+    margin-right: 60px;
+    align-items: center;
+
+
+}
+
+/* ...........skills section.............. */
+
+.a3 {
+    display: flex;
+    padding: 20px 120px;
+    font-family: 'Inter';
+}
+
+.u {
+    width: 324px;
+    height: 40px;
+    margin-left: 50px;
+    top: 1261px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 121.5%;
+    letter-spacing: -0.03em;
+    text-decoration-line: underline;
+    color: #181717;
+}
+
+.b3 {
+
+    width: 601px;
+    height: 104px;
+    padding: 1px 70px;
+    top: 1258px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 121.5%;
+    letter-spacing: -0.03em;
+    color: #181717;
+}
+
+.a4 {
+    display: flex;
+    padding: 20px 120px;
+    font-family: 'Inter';
+}
+
+.b4 {
+    width: 401px;
+    height: 150px;
+    padding: 1px 70px;
+    top: 1258px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 121.5%;
+    letter-spacing: -0.03em;
+    color: #181717;
+}
+
+.h2 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.left {
+    padding: 20px 150px;
+    font-family: 'DM Sans';
+}
+
+.right {
+    padding: 20px 150px;
+    font-family: 'DM Sans';
+}
+
+.resume {
+    font-family: 'Inter';
+}
